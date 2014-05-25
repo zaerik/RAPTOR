@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 5/25/2014 4:11:21 AM
+
+BeginCmp
+TimeStamp = /5381641C;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53818345;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53818379;
+Reference = K3;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53815D0B;
+Reference = P1;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381644E;
+Reference = P2;
+ValeurCmp = CONN_2;
+IdModule  = PIN_ARRAY_2X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381A5F5;
+Reference = P3;
+ValeurCmp = CONN_1;
+IdModule  = 1PIN_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381A7B1;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381A7CF;
+Reference = SW2;
+ValeurCmp = SWITCH_INV;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381A201;
+Reference = SW3;
+ValeurCmp = 4-SW_DIP;
+IdModule  = ;
+EndCmp
+
+BeginCmp
+TimeStamp = /538187FC;
+Reference = U1;
+ValeurCmp = LD1117DT33;
+IdModule  = DPAK2;
+EndCmp
+
+BeginCmp
+TimeStamp = /5381889D;
+Reference = U2;
+ValeurCmp = L78M05;
+IdModule  = DPAK2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53818C31;
+Reference = U3;
+ValeurCmp = TX-5800-200;
+IdModule  = ;
+EndCmp
+
+EndListe
