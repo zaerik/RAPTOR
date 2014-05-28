@@ -1,4 +1,4 @@
-Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 5/25/2014 6:22:34 PM
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 5/27/2014 7:30:14 PM
 
 BeginCmp
 TimeStamp = /5381641C;
@@ -61,6 +61,13 @@ TimeStamp = /5381A201;
 Reference = SW3;
 ValeurCmp = 4-SW_DIP;
 IdModule  = 4-SW_DIP;
+EndCmp
+
+BeginCmp
+TimeStamp = /53851F8C;
+Reference = SW4;
+ValeurCmp = SWITCH_INV;
+IdModule  = solder_jumper_3;
 EndCmp
 
 BeginCmp
