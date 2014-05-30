@@ -1,0 +1,5 @@
+Description of Jumpers for Zaerik FPV Board Rev 1.0
+
+- Jumper 1 (JMP1): This determines whether the Tx receives 3.3V or 5V.
+- Jumper 2 (JMP2): This determines whether the Camera receives 3.3V, 5V, or no power (leave open).
+- Jumper 3 (JMP3): This determines whether the 5V rail is powered by the on-board 5V regulator or by VIN (if you're supply to the board is already 5V).
