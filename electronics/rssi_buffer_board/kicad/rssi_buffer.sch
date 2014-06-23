@@ -1,0 +1,301 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 27 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "23 jun 2014"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TL072 U1
+U 1 1 53A6253A
+P 3350 1400
+F 0 "U1" H 3300 1600 60  0000 L CNN
+F 1 "TL072" H 3300 1150 60  0000 L CNN
+F 2 "" H 3350 1400 60  0000 C CNN
+F 3 "" H 3350 1400 60  0000 C CNN
+	1    3350 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K1
+U 1 1 53A6266F
+P 950 1100
+F 0 "K1" V 900 1100 50  0000 C CNN
+F 1 "CONN_3" V 1000 1100 40  0000 C CNN
+F 2 "" H 950 1100 60  0000 C CNN
+F 3 "" H 950 1100 60  0000 C CNN
+	1    950  1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K3
+U 1 1 53A6268D
+P 5650 1050
+F 0 "K3" V 5600 1050 50  0000 C CNN
+F 1 "CONN_3" V 5700 1050 40  0000 C CNN
+F 2 "" H 5650 1050 60  0000 C CNN
+F 3 "" H 5650 1050 60  0000 C CNN
+	1    5650 1050
+	1    0    0    -1  
+$EndComp
+Text Label 1300 1100 0    60   ~ 0
+V1++
+Text Label 5300 1050 2    60   ~ 0
+V1++
+Text Label 3250 1000 0    60   ~ 0
+V1++
+Text Label 1300 1200 0    60   ~ 0
+RSSI_IN1
+Text Label 5300 1150 2    60   ~ 0
+RSSI_OUT1
+$Comp
+L C C11
+U 1 1 53A632E4
+P 2750 1000
+F 0 "C11" H 2750 1100 40  0000 L CNN
+F 1 "10uF" H 2756 915 40  0000 L CNN
+F 2 "~" H 2788 850 30  0000 C CNN
+F 3 "~" H 2750 1000 60  0000 C CNN
+	1    2750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R11
+U 1 1 53A63302
+P 2400 1300
+F 0 "R11" V 2480 1300 40  0000 C CNN
+F 1 "68k" V 2407 1301 40  0000 C CNN
+F 2 "~" V 2330 1300 30  0000 C CNN
+F 3 "~" H 2400 1300 30  0000 C CNN
+	1    2400 1300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R12
+U 1 1 53A63311
+P 2750 2350
+F 0 "R12" V 2830 2350 40  0000 C CNN
+F 1 "10k" V 2757 2351 40  0000 C CNN
+F 2 "~" V 2680 2350 30  0000 C CNN
+F 3 "~" H 2750 2350 30  0000 C CNN
+	1    2750 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R13
+U 1 1 53A63320
+P 3600 2000
+F 0 "R13" V 3680 2000 40  0000 C CNN
+F 1 "100k" V 3607 2001 40  0000 C CNN
+F 2 "~" V 3530 2000 30  0000 C CNN
+F 3 "~" H 3600 2000 30  0000 C CNN
+	1    3600 2000
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 1400 4050 1400
+Wire Wire Line
+	3950 2000 3850 2000
+Wire Wire Line
+	3350 2000 2750 2000
+Wire Wire Line
+	2750 1500 2850 1500
+Connection ~ 2750 2000
+Wire Wire Line
+	3950 1400 3950 2000
+Wire Wire Line
+	2750 1500 2750 2100
+Wire Wire Line
+	2650 1300 2850 1300
+Wire Wire Line
+	2750 1200 2750 1300
+Connection ~ 2750 1300
+Text Label 2150 1300 2    60   ~ 0
+RSSI_IN1
+Connection ~ 3950 1400
+Text Label 4050 1400 0    60   ~ 0
+RSSI_OUT1
+$Comp
+L TL072 U1
+U 2 1 53A636F5
+P 3350 3800
+F 0 "U1" H 3300 4000 60  0000 L CNN
+F 1 "TL072" H 3300 3550 60  0000 L CNN
+F 2 "" H 3350 3800 60  0000 C CNN
+F 3 "" H 3350 3800 60  0000 C CNN
+	2    3350 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K2
+U 1 1 53A636FB
+P 850 3500
+F 0 "K2" V 800 3500 50  0000 C CNN
+F 1 "CONN_3" V 900 3500 40  0000 C CNN
+F 2 "" H 850 3500 60  0000 C CNN
+F 3 "" H 850 3500 60  0000 C CNN
+	1    850  3500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L CONN_3 K4
+U 1 1 53A63701
+P 5550 3450
+F 0 "K4" V 5500 3450 50  0000 C CNN
+F 1 "CONN_3" V 5600 3450 40  0000 C CNN
+F 2 "" H 5550 3450 60  0000 C CNN
+F 3 "" H 5550 3450 60  0000 C CNN
+	1    5550 3450
+	1    0    0    -1  
+$EndComp
+Text Label 1200 3500 0    60   ~ 0
+V2++
+Text Label 5200 3450 2    60   ~ 0
+V2++
+Text Label 3250 3400 0    60   ~ 0
+V1++
+Text Label 1200 3600 0    60   ~ 0
+RSSI_IN2
+Text Label 5200 3550 2    60   ~ 0
+RSSI_OUT2
+$Comp
+L C C21
+U 1 1 53A63727
+P 2750 3400
+F 0 "C21" H 2750 3500 40  0000 L CNN
+F 1 "10uF" H 2756 3315 40  0000 L CNN
+F 2 "~" H 2788 3250 30  0000 C CNN
+F 3 "~" H 2750 3400 60  0000 C CNN
+	1    2750 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R21
+U 1 1 53A6372D
+P 2400 3700
+F 0 "R21" V 2480 3700 40  0000 C CNN
+F 1 "68k" V 2407 3701 40  0000 C CNN
+F 2 "~" V 2330 3700 30  0000 C CNN
+F 3 "~" H 2400 3700 30  0000 C CNN
+	1    2400 3700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R22
+U 1 1 53A63733
+P 2750 4750
+F 0 "R22" V 2830 4750 40  0000 C CNN
+F 1 "10k" V 2757 4751 40  0000 C CNN
+F 2 "~" V 2680 4750 30  0000 C CNN
+F 3 "~" H 2750 4750 30  0000 C CNN
+	1    2750 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R23
+U 1 1 53A63739
+P 3600 4400
+F 0 "R23" V 3680 4400 40  0000 C CNN
+F 1 "100k" V 3607 4401 40  0000 C CNN
+F 2 "~" V 3530 4400 30  0000 C CNN
+F 3 "~" H 3600 4400 30  0000 C CNN
+	1    3600 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3850 3800 4050 3800
+Wire Wire Line
+	3950 4400 3850 4400
+Wire Wire Line
+	3350 4400 2750 4400
+Wire Wire Line
+	2750 3900 2850 3900
+Connection ~ 2750 4400
+Wire Wire Line
+	3950 3800 3950 4400
+Wire Wire Line
+	2750 3900 2750 4500
+Wire Wire Line
+	2650 3700 2850 3700
+Wire Wire Line
+	2750 3600 2750 3700
+Connection ~ 2750 3700
+Text Label 2150 3700 2    60   ~ 0
+RSSI_IN2
+Connection ~ 3950 3800
+Text Label 4050 3800 0    60   ~ 0
+RSSI_OUT2
+Text Label 1300 1000 0    60   ~ 0
+V--
+Text Label 1200 3400 0    60   ~ 0
+V--
+Text Label 5200 3350 2    60   ~ 0
+V--
+Text Label 5300 950  2    60   ~ 0
+V--
+Text Label 3250 1800 0    60   ~ 0
+V--
+Text Label 3250 4200 0    60   ~ 0
+V--
+Text Label 2750 2600 0    60   ~ 0
+V--
+Text Label 2750 5000 0    60   ~ 0
+V--
+Text Label 2750 800  0    60   ~ 0
+V--
+Text Label 2750 3200 0    60   ~ 0
+V--
+Text Label 1500 2000 0    60   ~ 0
+V2++
+Text Label 900  2000 2    60   ~ 0
+V1++
+$Comp
+L SW_PUSH SW1
+U 1 1 53A63E67
+P 1200 2000
+F 0 "SW1" H 1350 2110 50  0000 C CNN
+F 1 "SW_PUSH" H 1200 1920 50  0000 C CNN
+F 2 "~" H 1200 2000 60  0000 C CNN
+F 3 "~" H 1200 2000 60  0000 C CNN
+	1    1200 2000
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

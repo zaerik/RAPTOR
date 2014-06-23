@@ -1,0 +1,108 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 6/21/2014 10:22:26 PM
+
+BeginCmp
+TimeStamp = /53A632E4;
+Reference = C11;
+ValeurCmp = 10uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63727;
+Reference = C21;
+ValeurCmp = 10uF;
+IdModule  = SM0603_Capa;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A6266F;
+Reference = K1;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A636FB;
+Reference = K2;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A6268D;
+Reference = K3;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63701;
+Reference = K4;
+ValeurCmp = CONN_3;
+IdModule  = PIN_ARRAY_3X1;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63302;
+Reference = R11;
+ValeurCmp = 68k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63311;
+Reference = R12;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63320;
+Reference = R13;
+ValeurCmp = 100k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A6372D;
+Reference = R21;
+ValeurCmp = 68k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63733;
+Reference = R22;
+ValeurCmp = 10k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63739;
+Reference = R23;
+ValeurCmp = 100k;
+IdModule  = SM0603_Resistor;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63D9A;
+Reference = SW1;
+ValeurCmp = SWITCH_INV;
+IdModule  = solder_jumper_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A63D28;
+Reference = SW2;
+ValeurCmp = SWITCH_INV;
+IdModule  = solder_jumper_2;
+EndCmp
+
+BeginCmp
+TimeStamp = /53A6253A;
+Reference = U1;
+ValeurCmp = TL072;
+IdModule  = DIP-8__300;
+EndCmp
+
+EndListe
