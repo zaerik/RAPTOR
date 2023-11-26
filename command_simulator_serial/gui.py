@@ -10,6 +10,9 @@ from struct import pack_into
 import ctypes
 
 class Handler:
+	# Default to no serial connection
+	ser = None
+
 	def on_window_delete_event(self, *args):
 		builder.get_object("disconnect_button").clicked()
 		Gtk.main_quit(*args)
@@ -32,8 +35,11 @@ class Handler:
 		
 	def on_disconnect_button_clicked(self, button):
 		serial_threads_stopped.set()	# Tell the serial port threads to stop
-		self.ser.close()
-		print("Serial Port Closed")
+
+		# Only close if there is a serial connection
+		if self.ser:
+			self.ser.close()
+			print("Serial Port Closed")
 		button.set_sensitive(False)
 		builder.get_object("connect_button").set_sensitive(True)
 	
@@ -93,7 +99,7 @@ serial_threads_stopped = threading.Event()
 serial_threads_stopped.set()
 
 def handle_received_serial_data(line):
-	if line <> "":
+	if line != "":
 		print("Received: " + line)
 
 def receive_serial_data(ser):
