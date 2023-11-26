@@ -40,6 +40,7 @@ class Handler:
 		if self.ser:
 			self.ser.close()
 			print("Serial Port Closed")
+			self.ser = None
 		button.set_sensitive(False)
 		builder.get_object("connect_button").set_sensitive(True)
 	
@@ -79,7 +80,6 @@ class SerialSendThread(threading.Thread):
 			pack_into(">BBHHHHB", output, 0, 0xFF, 0xFF, self.servo_0, self.servo_1, self.servo_2, self.servo_3, 0x00)
 			self.ser.write(output)
 			
-			print(datetime.datetime.now())
 			next_call += 0.02
 			time.sleep(next_call - time.time())
 	
@@ -100,7 +100,7 @@ serial_threads_stopped.set()
 
 def handle_received_serial_data(line):
 	if line != "":
-		print("Received: " + line)
+		print("Received: " + str(line))
 
 def receive_serial_data(ser):
 	while not serial_threads_stopped.is_set():
